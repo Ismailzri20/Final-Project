@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{
+    --white: #fff;
+    --light: #eeeded;
+    --orange: #ffa16c;
+}
+
+body{
+    background-color: var(--orange);
+    font-family: system-ui;
+    overflow: hidden;
+}
+
+/* start nav-bar */
+
+.nav-bar{
+    zoom: 1;
+    max-width: 97%;
+    padding: 5px 20px;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+.nav-bar ul li{
+    display: inline;
+    list-style: none;
+    color: black;
+}
+
+.title{
+    padding: 10px;
+    font-family:'lobster', cursive;
+    color: var(--light);
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.title span{
+    color: var(--orange);
+}
+
+/* end nav-bar */
+
+.container{
+    width: 98%;
+    border: 1px solid var(--white);
+    max-width: 100%;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 80vh;
+    margin: 5px;
+
+}
+
+/* start menu */
+
+.menu{
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.menu ul{
+    padding: 20px 0 20px 20px;
+    list-style: none;
+    border-bottom: 1px solid var(--light);
+}
+.menu ul li{
+    padding: 10px 0;
+}
+.menu ul li i{
+    margin-right: 12px;
+}
+.menu ul li.active{
+    color: var(--orange);
+    border-right: 2px solid  var(--orange);
+}
+.menu ul li:hover{
+    color: var(--orange);
+    border-right: 2px solid  var(--orange);
+}
+/* end menu */
+
+/* center */
+
+.center{
+    background-color: var(--light);
+    border-radius: 10px;
+}
+
+    /* form */
+.center .search{
+    background-color: var(--white);
+    padding: 20px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.center .search .form{
+    max-width: max-content;
+    border: 1px solid var(--light);
+    border-radius: 10px;
+    padding-left: 15px;
+    color: var(--light);
+} 
+
+.center .search .form input{
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    width: 610px;
+}  
+
+.center .search .form button{
+    border: none;
+    background-color: var(--orange);
+    color: var(--light);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    /* end form */
+
+
+.center h2{
+    padding: 20px;
+    text-align: center;
+    font-family: 'lobster', cursive;
+    font-size: xx-large;
+    letter-spacing: 5px;
+}
+
+.center p{
+    text-align: center;
+    font-family: 'lobster', cursive;
+    font-size: large;
+    word-spacing: 5px;
+    padding-top: 50px;
+}
+
+.center .list{
+    padding: 0 20px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+.button{
+    border: none;
+    color: var(--light);
+    background-color: var(--orange);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 50px;
+    margin: 70px auto;
+    display: flex;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+}
+
+/* end center */
+
+/* social media */
+
+.social-media{
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px solid var(--light);
+    background-color: var(--white);
+    border-radius: 10px;
+}
+.social-media ul li {
+    padding: 10px 0;
+    list-style: none;
+}
+
+.social-media ul li i{
+        margin-right: 12px;
+}
+
+.social-media ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.social-media ul li.active{
+    color: var(--orange);
+    border-right: 2px solid  var(--orange);
+}
+
+.social-media ul li:hover{
+     color: var(--orange);
+    border-right: 2px solid  var(--orange);
+}
+/* end social media */
